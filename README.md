@@ -6,6 +6,21 @@ This project aims to predict postpartum depression (PPD) using machine learning 
 
 The dataset used in this project is available in the file `PPDD.csv`. It contains both input features and the target variable (whether an individual has postpartum depression or not). The dataset has been preprocessed and is ready for analysis and model training.
 
+## How It Works
+
+The program follows the following steps to predict postpartum depression:
+
+1. The dataset is loaded and split into input features (X) and the target variable (y).
+2. The categorical features in the input data are one-hot encoded to convert them into numerical representations.
+3. The dataset is split into training and test sets using the `train_test_split` function from scikit-learn.
+4. The input features are standardized using the `StandardScaler` to ensure that all features have the same scale.
+5. A machine learning model, in this case, a RandomForestClassifier, is created and trained using the training data.
+6. The trained model is used to make predictions on the test set to evaluate its performance.
+7. The program prompts the user to provide responses to a set of questions related to the features used for prediction.
+8. The user's responses are encoded and scaled using the same preprocessing steps applied to the training data.
+9. The model predicts whether the user has postpartum depression based on their responses.
+10. The prediction is displayed on the console.
+
 ## Dependencies
 
 The following dependencies are required to run the project:
